@@ -362,6 +362,8 @@ span {
 
 .projects .heading {
   margin-bottom: 5rem;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .wrapper {
