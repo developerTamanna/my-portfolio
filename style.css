@@ -186,7 +186,6 @@ span {
   box-shadow: 0 0 1.6rem var(--main-color);
 }
 
-
 /* About Section */
 .about {
   display: flex;
@@ -217,9 +216,8 @@ span {
 }
 
 .about-img img:hover {
-  box-shadow: 0 0 25px var(--main-color),
-              0 0 35px var(--main-color),
-              0 0 55px var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color),
+    0 0 55px var(--main-color);
 }
 
 /* Text Section */
@@ -259,7 +257,6 @@ span {
   color: white;
   border-radius: 5px;
   transition: 0.3s;
-  
 }
 
 .btn:hover {
@@ -308,7 +305,6 @@ span {
     font-size: 1.3rem;
   }
 }
-
 
 /* Services Section */
 
