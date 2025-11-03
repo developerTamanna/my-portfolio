@@ -360,6 +360,8 @@ span {
   color: var(--main-color);
 }
 
+/* //skills section */
+
 /* ******************Contact Section********************* */
 
 .contact {
@@ -465,7 +467,7 @@ span {
     padding: 7rem;
   }
 
-  .testimonials .wrapper {
+  .projects .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
   .contact form .input-box input {
