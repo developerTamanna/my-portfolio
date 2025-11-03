@@ -455,6 +455,8 @@ span {
 .contact h2 {
   margin-bottom: 3rem;
   color: var(--main-color);
+  text-align: center;
+  font-size: 4rem;
 }
 
 .contact form {
