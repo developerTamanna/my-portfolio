@@ -14,6 +14,7 @@
   --snd-bg-color: #d5fdf9;
   --text-color: #000;
   --main-color: #007f73;
+  --sub-color: #979595;
 }
 
 html {
@@ -84,7 +85,7 @@ section {
 
 .home {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -118,11 +119,14 @@ section {
 
 .home-content {
   margin-left: 5rem;
+  justify-items: left;
+  justify-content: left;
 }
 
 .home-content h3 {
-  font-size: 3.7rem;
+  font-size: 2.6rem;
   font-weight: 700;
+  color: var(--sub-color);
 }
 
 .home-content h3:nth-of-type(2) {
