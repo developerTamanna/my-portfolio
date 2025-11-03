@@ -182,53 +182,129 @@ span {
   box-shadow: 0 0 1.6rem var(--main-color);
 }
 
-/* About Section */
 
+/* About Section */
 .about {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   background: var(--snd-bg-color);
+  padding: 5rem 8%;
+  flex-wrap: wrap;
+}
+
+/* Image Box */
+.about-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: end;
 }
 
 .about-img img {
-  width: 25vw;
-  width: 25vw;
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
   border: 2px solid var(--main-color);
-  border-radius: 50%;
+  border-radius: 15px; /* square with soft corners */
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
 .about-img img:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color),
-    0 0 55px var(--main-color);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 35px var(--main-color),
+              0 0 55px var(--main-color);
 }
 
-.heading {
-  text-align: center;
-  font-size: 6rem;
-}
-
+/* Text Section */
 .about-content {
-  padding: 0 4rem;
+  flex: 1 1 400px;
 }
 
-.about-content h2 {
+.about-content .heading {
   text-align: left;
-  line-height: 1.2;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 span {
+  color: var(--main-color);
 }
 
 .about-content h3 {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content h3 span {
+  color: var(--main-color);
 }
 
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  line-height: 1.6;
 }
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid var(--main-color);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+  
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 4rem 5%;
+  }
+
+  .about-img img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-content .heading {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .about-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-content .heading {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.3rem;
+  }
+}
+
 
 /* Services Section */
 
