@@ -546,19 +546,23 @@ span {
     padding: 10rem 3%;
   }
   .services {
-    padding: 7rem;
+    padding: 7rem 3%; /* একটু হরাইজন্টাল প্যাডিং কমালাম */
   }
 
   .projects .wrapper {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem; /* গ্যাপ একটু দিলাম */
+    padding: 0 1rem;
   }
   .contact form .input-box input {
     width: 100%;
+    margin: 0.7rem 0 !important; /* মার্জিন ঠিক রাখতে */
   }
   .footer {
     padding: 2rem 3%;
   }
 }
+
 @media (max-width: 786px) {
   #menu-icon {
     display: block;
@@ -575,6 +579,7 @@ span {
     background: var(--main-color);
     transition: all 0.5s ease;
     backdrop-filter: blur(10px);
+    z-index: 9999;
   }
 
   .navbar a {
@@ -586,47 +591,140 @@ span {
   .navbar.active {
     right: 0;
   }
+
   .home {
     flex-direction: column;
+    padding: 2rem 1rem 4rem;
   }
+
   .home-content h3 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
+
   .home-content h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
+
   .home-content {
     order: 2;
-    margin-left: 1rem;
+    margin-left: 0;
+    text-align: center;
   }
+
   .home-img img {
     width: 70vw;
-    margin-top: 4rem;
+    margin: 4rem auto 0;
+    display: block;
   }
+
   .about {
     flex-direction: column-reverse;
+    padding: 3rem 1rem;
+    gap: 3rem;
   }
+
   .about-img img {
     width: 70vw;
-    margin-top: 4rem;
+    margin-top: 0;
+    height: auto; /* preserve aspect ratio */
   }
+
   .services h2 {
     margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  /* Service Cards Adjust */
+  .services-container {
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .services-container .services-box {
+    flex: 1 1 100%;
+    max-width: 400px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+  }
+
+  .services-box i {
+    font-size: 5rem;
+  }
+
+  .services-box h3 {
+    font-size: 2rem;
+  }
+
+  .services-box p {
+    font-size: 1.4rem;
+    margin: 1rem 0 2rem;
   }
 }
 
 @media (max-width: 617px) {
-  .home-img img {
-    width: 70vw;
-    margin-top: 8rem;
-  }
+  .home-img img,
   .about-img img {
-    width: 70vw;
-    margin-top: 4rem;
+    width: 80vw;
+    margin-top: 2rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 3.8rem;
+  }
+
+  .services-container .services-box {
+    max-width: 90vw; /* আরো রেস্পন্সিভ */
   }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .home-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .services h2 {
+    font-size: 2.5rem;
+  }
+
+  .services-container .services-box {
+    padding: 2.5rem 1.5rem;
+    max-width: 95vw;
+  }
+
+  .services-box i {
+    font-size: 4rem;
+  }
+
+  .services-box h3 {
+    font-size: 1.7rem;
+  }
+
+  .services-box p {
+    font-size: 1.2rem;
+  }
+
+  .about-content .heading {
+    font-size: 2.5rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
   }
 }
