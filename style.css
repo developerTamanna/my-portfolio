@@ -531,7 +531,6 @@ span {
 }
 
 /* BreakPoint */
-
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -547,6 +546,7 @@ span {
   }
   .services {
     padding: 7rem 3%; /* একটু হরাইজন্টাল প্যাডিং কমালাম */
+    padding-bottom: 3rem; /* নিচের gap কমানো */
   }
 
   .projects .wrapper {
@@ -554,12 +554,23 @@ span {
     gap: 2rem; /* গ্যাপ একটু দিলাম */
     padding: 0 1rem;
   }
+  .projects {
+    padding-top: 3rem; /* services থেকে projects এ gap কমানো */
+    padding-bottom: 3rem; /* projects থেকে পরবর্তী section এর gap কমানো */
+  }
+
   .contact form .input-box input {
     width: 100%;
     margin: 0.7rem 0 !important; /* মার্জিন ঠিক রাখতে */
   }
+  .contact {
+    padding-bottom: 2rem; /* contact থেকে footer এর gap কমানো */
+  }
+
   .footer {
     padding: 2rem 3%;
+    padding-top: 2rem; /* footer এর উপরের gap কমানো */
+    padding-bottom: 2rem;
   }
 }
 
@@ -660,6 +671,22 @@ span {
     font-size: 1.4rem;
     margin: 1rem 0 2rem;
   }
+
+  /* Extra spacing fixes */
+  .services {
+    padding-bottom: 2.5rem; /* services section bottom gap */
+  }
+  .projects {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .contact {
+    padding-bottom: 1.5rem;
+  }
+  .footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 617px) {
@@ -726,5 +753,21 @@ span {
 
   .about-content p {
     font-size: 1.2rem;
+  }
+
+  /* ছোট স্ক্রিনে gap control */
+  .services {
+    padding-bottom: 2rem;
+  }
+  .projects {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .contact {
+    padding-bottom: 1.2rem;
+  }
+  .footer {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
   }
 }
